@@ -1,0 +1,44 @@
+body {
+    color: #05080C;
+    font-size: 18px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin:0;
+    background: #F6F6F6;    
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    border-top: 5px solid #222222;
+    padding: 0 100px;
+}
+
+article {
+    border-bottom: 5px solid #222222;
+    padding: 0 100px;
+}
+
+article img {
+    float: right;
+    margin-left: 20px;
+}
+
+th {
+    background-color: #222222;
+    color: white;
+}
+
+td {
+    background-color: #eeeeee;
+    padding:10px;
+}
+a {
+    color: rgb(124, 106, 192);
+}
+
+a:hover {
+    color:rebeccapurple;
+}
