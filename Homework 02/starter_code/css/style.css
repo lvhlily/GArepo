@@ -3,7 +3,7 @@
 /* ################################################## */
 html, body {
   height: 100%;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', 'sans-serif';
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -16,25 +16,21 @@ p {
   padding: 15px 0;
 }
 
-
-/* Why is this display: block; not redundant? */
 .cta {
+  display: block;
   border-radius: 5px;
   color: #000;
-  display: block;
   font-size: 24px;
   padding: 10px 30px;
-  text-align: center;
-  text-decoration: none;
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  text-align: center;
 }
 
-/* ############################## */
-/* ########### Header ########### */
-/* ############################## */
+/* HEADER */
 .site-header {
-  background-color: #000;
+  background-color: black;
   border-bottom: 5px solid #f2ff00;
   padding: 10px 30px;
   display: flex;
@@ -44,18 +40,16 @@ p {
 
 .site-header h1 {
   font-size: 32px;
-/*   padding: 15px 05px 0; */
   text-transform: capitalize;
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', 'serif';
 }
 
 .site-header h1,
 .site-header h1 a,
 .site-header h1 a:visited {
   color: #f2ff00;
-  text-decoration:none;
+  text-decoration: none;
 }
-
 
 .main-nav ul {
   list-style: none;
@@ -63,13 +57,11 @@ p {
   justify-content: flex-end;
   font-size: 20px;
   padding: 15px 0;
-  font-family: 'Lato', sans-serif;
-  margin:0;
+  font-family: 'Lato', 'sans-serif';
+  margin: 0;
 }
 
-/* How come there is no float here? */
 .main-nav li {
-
   padding-left: 15px;
 }
 
@@ -77,25 +69,19 @@ p {
 .main-nav li a,
 .main-nav li a:visited {
   color: #fff;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .main-nav li a:hover {
   color: #f2ff00;
 }
 
-
 .main-nav-item-featured {
   text-transform: uppercase;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', 'sans-serif';
 }
 
-/* ###################################### */
-/* ########### Second section ########### */
-/* ###################################### */
-
-/* You don't need any layout here ;) Why? 
- * Because it's just a block, going full width... */
+/* SECOND SECTION */
 .secondary-text {
   background-color: #adadad;
   font-weight: bold;
@@ -117,11 +103,8 @@ p {
   border-bottom: 3px solid #f2ff00;
 }
 
-/* #################################### */
-/* ########### Hero section ########### */
-/* #################################### */
+/* HERO SECTION */
 
-/* What's going on with the background-size? How is it working? */
 .hero-area {
   background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg') center center no-repeat;
   background-size: cover;
@@ -136,7 +119,6 @@ p {
   font-weight: bold;
 }
 
-/* Why did I put margin and padding on this element? */
 .inset-div {
   background-color: rgba(255,255,255,0.9);
   margin: 25px 25px 25px 0;
@@ -147,19 +129,14 @@ p {
   box-shadow: 0 0 5px rgba(0,0,0,.75);
 }
 
-.main-cta {
+.main-cta{
   background-color: #f2ff00;
-  border-bottom: 2px solid #ffd900;
-}
-
-.featured-block {
-
+  border-bottom: 2px solid #f2ff00;
 }
 
 .featured-block h1 {
   font-family: 'Merriweather', serif;
   font-size: 24px;
-
 }
 
 .featured-block .cta {
@@ -167,12 +144,8 @@ p {
   border-bottom: 2px solid #878787;
 }
 
-/* ########################################## */
-/* ########### Three-wide section ########### */
-/* ########################################## */
+/* THREE WIDE SECTION */
 
-/* Notice there is no align-items here - why? */
-/* The items are default align-items: flex-start (top), so we don't need it */
 .three-wide {
   display: flex;
   justify-content: center;
@@ -184,18 +157,29 @@ p {
   padding: 2%;
 }
 
-
 .third-container:last-child {
   border-right: none;
 }
 
-
-
-/* ############################## */
-/* ########### Footer ########### */
-/* ############################## */
+/* FOOTER */
 .site-footer {
   background-color: #000;
   color: #fff;
   padding: 15px 25px;
 }
+
+
+
+/* Fonts, classes are so I can reuse the styles on a variety of elements */
+.merriweather { font-family: 'Merriweather', serif; }
+      .oswald { font-family: 'Oswald', sans-serif; }
+        .lato { font-family: 'Lato', sans-serif; }
+
+/* Colors */
+/* Dark yellow: #f2ff00 */
+/* Lighter yellow: #ffd900 */
+/* Light gray: #adadad */
+/* Medium gray: #878787 */
+
+/* Background Image */
+/* https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg */
