@@ -1,0 +1,18 @@
+.destinationMapAndNav {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.destinationMap {
+    align-items: center;
+    display: flex;
+    background-image: url('images/map.png');
+    background-position: center center;
+    background-size: cover;
+    height: 600px;
+    justify-content: center;
+}
+
+.destinationMap {
+    background-color: black;
+}
