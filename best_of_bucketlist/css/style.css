@@ -1,18 +1,24 @@
 .destinationMapAndNav {
     display: grid;
     grid-template-columns: 80% 20%;
+    padding: 20px 20px;
+    margin: 20px 20px 20px 20px;
 }
 
-.destinationMap {
+.destinationMapImage {
     align-items: center;
     display: flex;
-    background-image: url('images/map.png');
+    background: no-repeat;
     background-position: center center;
     background-size: cover;
+    width: 95%;
     height: 600px;
     justify-content: center;
+    border: 1px solid gray;
+    margin: 20px 20px;
 }
 
-.destinationMap {
-    background-color: black;
+.destinationToggle {
+    padding: 20px 20px;
+    margin: 20px 20px 20px 20px;
 }
