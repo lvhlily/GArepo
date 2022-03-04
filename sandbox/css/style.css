@@ -1,0 +1,390 @@
+.mainContents {
+    margin: 0 0 0 70px;
+}
+/* topHeader and topSiteNav */
+.topHeader {
+    display: flex;
+    padding: 0.3rem;
+    justify-content: space-between;
+    max-height: 5rem;
+}
+
+.topHeaderInner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.topHeaderInner .siteLogo {
+    display: flex;
+    padding: 1rem;
+}
+
+/* Best of Bucketlist Title */
+.siteTitle {
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+}
+
+.siteTitle a {
+    display: flex;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gray;
+}
+
+/* topSiteNavigation on Right Side comment out display flex for hamburger */
+.topSiteNavigation {
+    display: flex;
+    width: 25%;
+    /* display: none; */
+}
+
+.topSiteNavigation ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.topSiteNavigation ul li {
+    display: flex;
+    padding: 2rem;
+}
+
+.topSiteNavigation ul a {
+    text-decoration: none;
+    color: gray;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Nav adjustment for tablet/mobile */
+
+@media (max-width:760) {
+
+}
+
+
+/* Burger on Right Side, comment out display none/flex as needed */
+.nav-toggle {
+    display: none;
+    margin-right: 30px;
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+    /* display: flex; */
+    padding: 0;
+    text-decoration: none;
+}
+
+
+/* There's just no telling how far I'll go */
+
+.siteHeader {
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: center;
+}
+
+.siteHeader h2 {
+    display: flex;
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+
+/* Destination Map and Nav */
+
+
+.destinationMapAndNav {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.destinationNavArea{
+    display: flex;
+    padding: .5rem;
+
+}
+
+.destinationNav a {
+    text-decoration: none;
+}
+
+.destinationMapImage {
+    align-items: center;
+    display: flex;
+    background: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 95%;
+    height: 600px;
+    justify-content: center;
+    border: 1px solid gray;
+    margin: 2rem 2rem;
+}
+
+.destinationToggle {
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.destinationToggle ul a{
+    list-style: none;
+    text-decoration: none;
+}
+
+@media (max-width:1199px) {
+    .destinationMapAndNav {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .destinationNav {
+        display: block;
+        justify-content: center;
+    }
+    .destinationNav .accordion {
+        width: 100%;
+    }
+}
+
+
+/* Country Selection Container */
+
+
+
+.countrySelectionContainer {
+    display: flex;
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    border: 1px solid gray;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Country Selection Info */
+
+.countrySelectionInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 0 0 100px;
+}
+
+.countrySelectionNameDate {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: flex-start;
+    padding: 10px;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+}
+
+.countryNameEmoji {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+.countryNameEmoji img {
+    max-width: 40px;
+}
+
+
+.countrySelectionNameDate li {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.countrySelectionNameDate h3 {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+/* Country Photos */
+
+.countryPhotos {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 1px;
+    width: 80%;
+    justify-content:center;
+}
+
+.countryTopPhotos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.countryTopPhotos img{
+    max-width: 360px;
+    padding: 10px;
+}
+
+@media (max-width:1700px) {
+
+    .countrySelectionInfo {
+        margin: 0;
+    }
+    .countryPhotos {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        gap: 2px;
+        width: 90%;
+    }
+
+    .countryPhotos img {
+        max-width: 290px;
+    }
+}
+
+@media (max-width:1199px) {
+
+    .countrySelectionInfo {
+        margin: 0;
+    }
+    .countryPhotos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 2px;
+        width: 90%;
+    }
+
+    .countryPhotos img {
+        max-width: 260px;
+    }
+}
+
+@media (max-width:760px) {
+
+    .countrySelectionInfo {
+        margin: 0;
+    }
+    .countryPhotos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 2px;
+        width: 90%;
+    }
+
+    .countryPhotos img {
+        max-width: 160px;
+    }
+}
+
+@media (max-width:540px) {
+
+    .countrySelectionInfo {
+        margin: 0;
+    }
+    .countryPhotos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 2px;
+        width: 90%;
+    }
+
+    .countryPhotos img {
+        max-width: 95px;
+    }
+}
+
+/* .carousel {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+} */
+
+
+
+/* Country Best Section */
+
+.countryBest {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    margin: 1rem;
+    /* border: 1px solid grey; */
+
+}
+
+.countryBestNotes ul{
+    display: block;
+    padding: 2rem;
+}
+
+.countryBestNotes h2 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.countryBestNotes li {
+    list-style: none;
+}
+
+/* Food */
+.bestFood_icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.bestFood_icon img {
+    max-width: 200px;
+}
+
+
+/* Activity */
+.bestActivity_icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.bestActivity_icon img {
+    max-width: 200px;
+}
+
+/* Visit Again */
+.visitAgain_icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.visitAgain_icon img {
+    max-width: 200px;
+}
+
+@media (max-width:760px) {
+    .visitAgain_icon img {
+        max-width: 90px;
+    }
+    .bestFood_icon img {
+        max-width: 90px;
+        width: 100%;
+    }
+    .bestActivity_icon img {
+        max-width: 90px;
+    }
+    .countryBestNotes h2 {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+}
