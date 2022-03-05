@@ -1,6 +1,7 @@
 .mainContents {
-    margin: 0 0 0 70px;
+    margin: 20px 20px 20px 20px;
 }
+
 /* topHeader and topSiteNav */
 .topHeader {
     display: flex;
@@ -83,8 +84,10 @@
 
 .siteHeader {
     display: flex;
-    background-color: whitesmoke;
+    background-color: #FAE6E7;
     justify-content: center;
+    min-height: 75px;
+    align-items: center;
 }
 
 .siteHeader h2 {
@@ -101,19 +104,43 @@
 
 .destinationMapAndNav {
     display: grid;
-    grid-template-columns: 75% 25%;
-    padding: 2rem;
-    margin: 2rem;
+    grid-template-columns: 70% 25%;
+    padding: 1rem;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 .destinationNavArea{
     display: flex;
-    padding: .5rem;
+    padding: 1rem;
 
 }
 
 .destinationNav a {
     text-decoration: none;
+    color: #332E3B;
+}
+
+.accordion > .accordion-item ul li{
+    list-style: none;
+}
+
+.accordion > .accordion-item button{
+    background-color:#E0C1C7;
+    color: #332E3B;
+
+}
+
+
+
+.destinationNav {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    align-items: center;
+    /* border: 1px solid gray; */
+    padding: 1rem 3rem 1rem 3rem ;
+
 }
 
 .destinationMapImage {
@@ -125,7 +152,7 @@
     width: 95%;
     height: 600px;
     justify-content: center;
-    border: 1px solid gray;
+    border: 1px solid #E0C1C7;
     margin: 2rem 2rem;
 }
 
@@ -160,9 +187,9 @@
 
 .countrySelectionContainer {
     display: flex;
-    width: 90%;
-    padding: 10px;
-    margin: 10px;
+    width: 100%;
+    /* padding: 10px;
+    margin: 10px; */
     justify-content: center;
     border: 1px solid gray;
     flex-direction: column;
@@ -295,7 +322,7 @@
     }
 
     .countryPhotos img {
-        max-width: 95px;
+        max-width: 155px;
     }
 }
 
@@ -387,4 +414,23 @@
         font-weight: 300;
     }
 
+}
+
+/* Footer */
+
+.site_footer {
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+.copy p {
+    font-size: 14px;
 }
