@@ -1,8 +1,7 @@
-window.onload = function () {
 
-    e.preventDefault();
 
-    //option 1 - no auto-child-collapse
-    compactMenu('destinationToggle',false,'&plusmn; ');
-  
-  }
+// Hamburger Toggle
+document.querySelector(".nav-toggle").addEventListener("click", function(){
+
+  document.querySelector(".topSiteNavigation").classList.toggle("nav-show")
+});
