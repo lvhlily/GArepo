@@ -1,0 +1,15 @@
+
+/* Expand country photos on hover */
+.photoTop {
+    transition: transform .3s; /* Animation */
+  }
+  
+  .photoTop:hover {
+    transform: scale(1.8);
+  }
+
+  @media (max-width: 960px) {
+    .photoTop:hover {
+        transform: scale(1.5);
+      }
+  }

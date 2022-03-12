@@ -26,7 +26,7 @@
 }
 
 /* Header mobile dynamics */
-@media (max-width: 800px) {
+@media (max-width: 760px) {
     .topHeaderInner .siteLogo {
     max-width: 230px;
     }
@@ -112,6 +112,7 @@
         height: 0;
         width: 0;
         overflow: hidden;
+        transition: all 400ms;
     }
     .topSiteNavigation ul {
         display: block;
@@ -189,8 +190,11 @@
 
 }
 .destinationNav h4{
-    font-size: 22px;
+    font-size: 18px;
+    color: #332E3B;
+    font-weight: 200;
     text-align: center;
+    text-transform: uppercase;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
@@ -219,7 +223,7 @@
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 760px) {
     .destinationNavArea .destinationNav h4 {
         font-size: 18px;
     }
@@ -312,7 +316,7 @@
     }
 }
 
-@media (max-width:900px) {
+@media (max-width:960px) {
     .destinationMapAndNav {
         display: grid;
         grid-template-columns: 90%;
@@ -380,7 +384,7 @@
     max-width: 40px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 760px) {
 
     .countryNameEmoji img {
         max-width: 27px;
@@ -398,7 +402,7 @@
     font-weight: 300;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 760px) {
 
     .countrySelectionNameDate li {
         font-size: 18px;
@@ -427,7 +431,7 @@
     width: 100%;
 }
 .countryTopPhotos img{
-    max-width: 360px;
+    max-width: 330px;
     padding: 10px;
 }
 
@@ -448,7 +452,7 @@
     }
 }
 
-@media (max-width:1199px) {
+@media (max-width:1200px) {
 
     .countrySelectionInfo {
         margin: 0;
@@ -457,15 +461,15 @@
         display: grid;
         grid-template-columns: 50% 50%;
         gap: 2px;
-        width: 90%;
+        width: 70%;
     }
 
     .countryPhotos img {
-        max-width: 260px;
+        max-width: 300px;
     }
 }
 
-@media (max-width:760px) {
+@media (max-width:960px) {
 
     .countrySelectionInfo {
         margin: 0;
@@ -474,15 +478,15 @@
         display: grid;
         grid-template-columns: 50% 50%;
         gap: 2px;
-        width: 90%;
+        width: 80%;
     }
 
     .countryPhotos img {
-        max-width: 160px;
+        max-width: 250px;
     }
 }
 
-@media (max-width:540px) {
+@media (max-width:704px) {
 
     .countrySelectionInfo {
         margin: 0;
@@ -491,11 +495,11 @@
         display: grid;
         grid-template-columns: 50% 50%;
         gap: 2px;
-        width: 90%;
+        width: 80%;
     }
 
     .countryPhotos img {
-        max-width: 155px;
+        max-width: 170px;
     }
 }
 
