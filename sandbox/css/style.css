@@ -420,7 +420,7 @@
 .countryPhotos {
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    gap: 1px;
+    gap: 3px;
     width: 70%;
     justify-content:center;
 }
@@ -431,8 +431,7 @@
     width: 100%;
 }
 .countryTopPhotos img{
-    max-width: 330px;
-    padding: 10px;
+    max-width: 100%;
 }
 
 @media (max-width:1700px) {
@@ -443,12 +442,11 @@
     .countryPhotos {
         display: grid;
         grid-template-columns: 30% 30% 30%;
-        gap: 2px;
         width: 90%;
     }
 
     .countryPhotos img {
-        max-width: 290px;
+        max-width: 100%;
     }
 }
 
@@ -460,12 +458,11 @@
     .countryPhotos {
         display: grid;
         grid-template-columns: 50% 50%;
-        gap: 2px;
         width: 70%;
     }
 
     .countryPhotos img {
-        max-width: 300px;
+        max-width: 100%;
     }
 }
 
@@ -477,12 +474,11 @@
     .countryPhotos {
         display: grid;
         grid-template-columns: 50% 50%;
-        gap: 2px;
         width: 80%;
     }
 
     .countryPhotos img {
-        max-width: 250px;
+        max-width: 100%;
     }
 }
 
@@ -494,12 +490,11 @@
     .countryPhotos {
         display: grid;
         grid-template-columns: 50% 50%;
-        gap: 2px;
         width: 80%;
     }
 
     .countryPhotos img {
-        max-width: 170px;
+        max-width: 100%;
     }
 }
 
@@ -790,4 +785,22 @@
 
 .btn:hover{
     background-color: #BB7F7F;
+}
+
+
+/* Error Messages */
+
+.errorContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.errorMessages {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+
 }
