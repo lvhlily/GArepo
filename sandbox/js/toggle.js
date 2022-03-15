@@ -1,16 +1,17 @@
 
 
-// Hamburger Toggle
-document.querySelector(".nav-toggle").addEventListener("click", function(){
+// HAMBURGER TOGGLE
+document.querySelector(".nav-toggle").addEventListener("click", function(e){
+
+  e.preventDefault();
 
   document.querySelector(".topSiteNavigation").classList.toggle("nav-show")
 });
 
 
 
-// Featured Photos
+// FEATURED PHOTOS
 let countryCards = document.getElementsByClassName("countryTopPhotos");
-
 
  // Loop through all the cards
 for (var i = 0; i < countryCards.length; i++){
@@ -31,10 +32,7 @@ countryCards[i].addEventListener('click',function(){
 
 
 
-
-
-
-// Contact Form
+// CONTACT FORM
 document.querySelector(".btn").addEventListener("click", function(e){
 
   e.preventDefault();

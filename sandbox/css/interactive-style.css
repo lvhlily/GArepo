@@ -1,3 +1,22 @@
+/* Featured and Expanded Item */
+/* Add cursor pointer */
+.countryTopPhotos {
+  cursor:pointer;
+  
+}
+/* Make the featured grid item span 2 columns and 2 rows */
+/* This is defaulted as grid item 2 to begin with */
+.featured-grid-item {
+  grid-column: span 2;
+  grid-row: span 2;
+  height: 100%;
+  min-height: 360px;
+}
+/* Make the featured grid item image a height of 100% */
+.featured-grid-item .photoTop {
+  height: 100%;
+}
+
 
 /* Expand country photos on hover */
 /* .photoTop {
@@ -13,25 +32,3 @@
         transform: scale(1.5);
       }
   } */
-
-
-
-
-  /* Featured and Expanded Item */
-/* Add cursor pointer */
-.countryTopPhotos {
-  cursor:pointer;
-  transition: 0.15s ease-in-out;
-}
-/* Make the featured grid item span 2 columns and 2 rows */
-/* This is defaulted as grid item 2 to begin with */
-.featured-grid-item {
-  grid-column: span 2;
-  grid-row: span 2;
-  height: 100%;
-  min-height: 360px;
-}
-/* Make the featured grid item image a height of 100% */
-.featured-grid-item .photoTop {
-  height: 100%;
-}
