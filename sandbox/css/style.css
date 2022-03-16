@@ -629,23 +629,70 @@
     align-items: center;
 }
 
+.fastFacts {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    padding-bottom: 2rem;
+    width: 100%;
+    text-align: center;
+    justify-content:first baseline;
+
+}
+
+.fastFacts h2 {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.fastFacts img {
+    display: flex;
+    max-width: 30px;
+
+}
+
+.colorSwatch img {
+    display: flex;
+    max-width: 30px;
+}
+
+.favorite1,
+.favorite2,
+.favorite3 {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    align-content: center;
+}
+
+.favoriteCountry,
+.favoriteHobby,
+.favoriteColor {
+    display: flex;
+}
+
 .linkedIn {
     display: flex;
     justify-content: flex-start;
     text-align:left;
     align-items:baseline;
-    padding: 2rem 2rem 2rem 0;
+    padding: 0 0 0 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
 }
 
 .linkedIn img {
-    max-width: 30px;
+    max-width: 20px;
 
     
 }
 
 .linkedIn h3 {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 200;
     padding: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -658,7 +705,7 @@
         justify-content: flex-start;
         text-align:left;
         align-items:baseline;
-        padding: 2rem 2rem 2rem 1rem;
+        padding: 0.2rem 2rem 2rem 1rem;
     
     }
     .linkedIn img {
@@ -669,6 +716,52 @@
         font-size: 16px;
         font-weight: 200;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .fastFacts {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+        width: 100%;
+        text-align: center;
+        justify-content:first baseline;
+    
+    }
+    
+    .fastFacts h2 {
+        font-size: 14px;
+        font-weight: 300;
+        margin: 5px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .fastFacts img {
+        display: flex;
+        max-width: 30px;
+    
+    }
+    
+    .colorSwatch img {
+        display: flex;
+        max-width: 30px;
+    }
+    
+    .favorite1,
+    .favorite2,
+    .favorite3 {
+        display: flex;
+        flex-direction: row;
+        padding: 10px 10px 10px 10px;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .favoriteCountry,
+    .favoriteHobby,
+    .favoriteColor {
+        display: flex;
     }
 }
 
@@ -683,7 +776,7 @@
 }
 
 
-.photoAndBio {
+/* .photoAndBio {
     display: grid;
     width: 90%;
     grid-template-columns: 50% 50%;
@@ -691,11 +784,13 @@
     align-items: center;
     padding: 1rem;
     
-}
+} */
 
 .headShotContainer {
     display: flex;
     justify-content: center;
+    align-items:center;
+    height: 100%;
 }
 
 .headShotContainer img {
@@ -716,13 +811,13 @@
     font-size: 16px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1599px) {
     .photoAndBio {
         display: grid;
         width: 100%;
         grid-template-columns: 100%;
         justify-content: center;
-        padding: 3rem;
+        /* padding: 3rem; */
         
     }
     .headShotContainer img {
@@ -732,9 +827,78 @@
     }
     .bio p {
         font-size: 16px;
+        padding: 1px;
+    }
+    .bio {
         padding: 1rem;
     }
+    .favorite1,
+    .favorite2,
+    .favorite3 {
+        display: flex;
+        flex-direction: row;
+        padding: 10px 10px 10px 10px;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .fastFacts {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+        width: 100%;
+        text-align: center;
+        justify-content:first baseline;
+    
+    }
 }
+
+@media (max-width: 860px) {
+    .photoAndBio {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 100%;
+        justify-content: center;
+        /* padding: 3rem; */
+        
+    }
+    .headShotContainer img {
+        max-width: 270px;
+        border-radius: 5px;
+        
+    }
+    .bio p {
+        font-size: 16px;
+        padding: 1px;
+    }
+    .bio {
+        padding: 1rem;
+    }
+    .favorite1,
+    .favorite2,
+    .favorite3 {
+        display: flex;
+        flex-direction: row;
+        padding: 10px 10px 10px 10px;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .fastFacts {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+        width: 100%;
+        text-align: center;
+        justify-content:first baseline;
+    
+    }
+}
+
 
 @media (max-width: 760px) {
     .photoAndBio {
@@ -753,23 +917,55 @@
     .bio p {
         font-size: 14px;
     }
+    
+    
 }
 
 
 @media (min-width: 1600px) {
+    .outterPhotoAndBio {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
     .photoAndBio {
         display: grid;
-        width: 80%;
+        width: 70%;
         grid-template-columns: 50% 50%;
         justify-content: center;
         align-items: center;
         padding: 1rem;
         
     }
-    .headShotContainer img {
-        max-width: 450px;
+
+    .bio p {
+        display: flex;
+        text-align: left;
+    }
+    .headShotContainer {
         padding: .5rem;
+        width: 100%;
         border-radius: 7px;
+    }
+    .favorite1,
+    .favorite2,
+    .favorite3 {
+        display: flex;
+        flex-direction: row;
+        padding: 10px 10px 10px 10px;
+        text-align: left;
+
+    }
+    .fastFacts {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+        width: 100%;
+        text-align: left;
+
+    
     }
 }
 
