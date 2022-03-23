@@ -498,13 +498,6 @@
     }
 }
 
-/* .carousel {
-    display: flex;
-    justify-content: center;
-    max-width: 1000px;
-} */
-
-
 
 /* Country Best Section */
 
@@ -1038,11 +1031,13 @@
 
 .btn {
     background-color: #A3625F;
+    border: #A3625F;
 }
 
 .btn:hover{
     background-color: #BB7F7F;
 }
+
 
 
 /* Error Messages */
